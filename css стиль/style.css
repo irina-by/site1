@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body {
+    background-color: #ffe2b0;
+}
+header {
+    text-align: center;
+}
+
+.container{
+
+    font-family: 'Roboto'; /* Стиль текста */ 
+    font-size: 25px;
+    display: flex;
+    align-items: center; /*выравнивание в одну строчку*/
+    justify-content: center; /*выравнивание по центру*/
+    gap: 100px; /*расстояние между объектами*/
+    padding: 20px 0px; /*верхний отступ*/
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.picture {
+    height: 640px;
+    background-image: url(../img/01-k.jpg);
+    background-position: 100%;
+    background-size: cover; /*чтобы картинка при сжатии уменьшалась чтобы смотреть сайт на разных мониторах*/
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.picture_block {
+    width: 420px; /*ширина*/
+    height: 190px;
+    background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234,156,65,0.8) 100%);
+    position: absolute;
+    top:54%;
+    left: 50%;
+    padding-top: 15px;
+}
+
+.picture_border {
+    width: 390px; /*ширина*/
+    height: 160px;/*высота*/
+    border: 1px solid black;
+    margin: 0 auto;  /*0-верхний и нижний отступ,auto правый и левый */
+    /*padding: 17px 0 0 28px; 17 сверху, 28 слева*/
+}
+
+.picture_border > h1{
+    text-align: center;
+    margin-bottom: 9px
+}
+.picture_border > p{
+    margin: 0;
+    text-align: center;
+}
+
+.brand_img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.brand_name img {
+    margin-right: 76px;
+}
+
+.brand_name img:last-child {
+    margin-right: 0px;
+}
+
+.text > h2 {
+    font-size: 96px;
+    text-align: center;
+    margin: 0;
+}
+
+.text_span {
+    color: red;
+}
+.text_p{
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px; /*ширина*/
+    font-family: 'Times New Roman', Times, serif; /* Стиль текста */ 
+    margin-bottom: 20px;
+}
+
+.order_map > h3 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+iframe {
+    display: block;
+    margin:0 auto;
+}
+.order_map{
+    margin-bottom: 20px;
+}
+.line{
+    border-top: 1px solid #000;
+    width: 1024px; /*ширина*/
+    margin:0 auto; /*тк есть ширина, выравнивание через маржин*/
+}
+footer{
+    height: 80px;
+}
